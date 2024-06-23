@@ -1,38 +1,216 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TOP 10 Kem dưỡng ẩm giá rẻ cho mọi loại da 2023</title>
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Products</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .slide {
+            display: none;
+        }
+
+        .active-slide {
+            display: block;
+        }
+        .image-container {
+            position: relative;
+            margin: 10px; /* Add margin to create space around the border */
+            padding: 10px; /* Add padding for the border */
+            border: 2px solid #e5e7eb; /* Light gray border color */
+            border-radius: 10px; /* Rounded corners */
+        }
+
+        .image-container img {
+            width: calc(100% - 20px); /* Adjust for the padding */
+            height: calc(100% - 20px); /* Adjust for the padding */
+            object-fit: cover;
+            border-radius: 8px; /* Match the inner radius for consistency */
+        }
+    </style>
 </head>
-<body>
-  <div class="container mx-auto px-4 py-8">
-    <h1 class="text-3xl font-bold text-center">TOP 10 Kem dưỡng ẩm giá rẻ cho mọi loại da 2023</h1>
-    <p class="text-gray-600 text-center mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
 
-    <div class="flex flex-col md:flex-row"> <div class="w-full md:w-1/2"> <div class="relative h-80">
-          <img src="assets/imgsld1.png" alt="Kem dưỡng ẩm Goodal Thanh Cát" class="absolute top-0 left-0 w-full h-full object-cover">
-          <button class="absolute top-0 right-0 p-4 bg-white rounded-md shadow-md hover:bg-gray-100">
-            <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l6-6m-6 6l-6 6" />
-            </svg>
-          </button>
-          <button class="absolute top-0 left-0 p-4 bg-white rounded-md shadow-md hover:bg-gray-100">
-            <svg class="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10l6 6m-6 -6l-6 -6" />
-            </svg>
-          </button>
+<body class="bg-pink-50">
+
+    <!-- Navigation -->
+    <header class="bg-white shadow">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="text-2xl font-bold text-pink-500">Logo</div>
+                <nav class="space-x-4 text-pink-600">
+                    <a href="#" class="hover:text-pink-800">Trang chủ</a>
+                    <a href="#" class="hover:text-pink-800">Giới thiệu</a>
+                    <a href="#" class="hover:text-pink-800">Sản phẩm</a>
+                    <a href="#" class="hover:text-pink-800">Khuyến mãi</a>
+                    <a href="#" class="hover:text-pink-800">Blog</a>
+                    <a href="#" class="hover:text-pink-800">Liên hệ</a>
+                </nav>
+            </div>
         </div>
-      </div>
-      <div class="w-full md:w-1/2 mt-4 md:mt-0"> <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
-    </div>
+    </header>
+    
+  <!-- Hero Section -->
+    <section class="container mx-auto px-6 py-16 text-center relative">
+        <div class="flex items-center justify-center">
+            <div class="text-left">
+                <h2 class="text-3xl font-bold text-pink-600">TOP 10 Kem dưỡng ẩm giá rẻ cho mọi loại da 2023</h2>
+                <p class="mt-4 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <button class="mt-6 px-4 py-2 border border-pink-500 text-pink-500 rounded">Xem thêm</button>
+            </div>
+            <div class="ml-10 relative">
+                <div class="slides relative w-90 h-96 bg-center">
+                    <div class="slide active-slide">
+                        <img src="./assets/imgsld1.png" alt="Product Image 1" class="w-full h-full object-cover rounded-lg">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/imgsld2.png" alt="Product Image 2" class="w-full h-full object-cover rounded-lg">
+                    </div>
+                    <div class="slide">
+                        <img src="./assets/imgsld1.png" alt="Product Image 3" class="w-full h-full object-cover rounded-lg">
+                    </div>
+                </div>
+                <button onclick="prevSlide()" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-lg">
+                    &#9664;
+                </button>
+                <button onclick="nextSlide()" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-lg">
+                    &#9654;
+                </button>
+            </div>
+        </div>
+    </section>
 
-    <div class="flex justify-center mt-8">
-      <button class="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600">Xem thêm</button>
-    </div>
-  </div>
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active-slide', i === index);
+            });
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide > 0) ? currentSlide - 1 : slides.length - 1;
+            showSlide(currentSlide);
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide < slides.length - 1) ? currentSlide + 1 : 0;
+            showSlide(currentSlide);
+        }
+
+        function autoSlide() {
+            nextSlide();
+            setTimeout(autoSlide, 3000); // Change image every 3 seconds
+        }
+
+        document.addEventListener('DOMContentLoaded', (event) => {
+            autoSlide();
+        });
+    </script>
+
+
+    <!-- Product Categories -->
+    <section class="container mx-auto px-6 py-16">
+        <div class="grid grid-cols-3 gap-6 text-center">
+            <div class="bg-blue-100 p-6 rounded">
+                <h3 class="text-xl font-bold">Skincare</h3>
+                <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet.</p>
+                <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded">Learn More</button>
+            </div>
+            <div class="bg-pink-100 p-6 rounded">
+                <h3 class="text-xl font-bold">Skincare</h3>
+                <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet.</p>
+                <button class="mt-4 px-4 py-2 bg-pink-500 text-white rounded">Learn More</button>
+            </div>
+            <div class="bg-green-100 p-6 rounded">
+                <h3 class="text-xl font-bold">Skincare</h3>
+                <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet.</p>
+                <button class="mt-4 px-4 py-2 bg-green-500 text-white rounded">Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Products -->
+    <section class="container mx-auto px-6 py-16">
+        <h2 class="text-2xl font-bold text-center text-pink-600">Sản phẩm mới</h2>
+        <div class="grid grid-cols-4 gap-6 mt-6">
+            <!-- Repeat this block for each product -->
+            <div class="bg-white p-6 rounded shadow">
+                <img src="https://via.placeholder.com/150" alt="Product Image" class="mx-auto">
+                <h3 class="mt-4 text-lg font-bold text-center">Candid BHA</h3>
+                <p class="mt-2 text-center text-pink-500">160,000 Đ</p>
+            </div>
+            <!-- End product block -->
+        </div>
+    </section>
+
+    <!-- Promotional Programs -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl font-bold text-center text-pink-600">Chương trình ưu đãi</h2>
+            <div class="grid grid-cols-3 gap-6 mt-6">
+                <div class="bg-gray-100 p-6 rounded text-center">
+                    <h3 class="text-xl font-bold">20% Off Summer</h3>
+                    <button class="mt-4 px-4 py-2 bg-pink-500 text-white rounded">Learn More</button>
+                </div>
+                <div class="bg-gray-100 p-6 rounded text-center">
+                    <h3 class="text-xl font-bold">Money Back</h3>
+                    <button class="mt-4 px-4 py-2 bg-pink-500 text-white rounded">Learn More</button>
+                </div>
+                <div class="bg-gray-100 p-6 rounded text-center">
+                    <h3 class="text-xl font-bold">Free Shipping</h3>
+                    <button class="mt-4 px-4 py-2 bg-pink-500 text-white rounded">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="container mx-auto px-6 py-16">
+        <h2 class="text-2xl font-bold text-center text-pink-600">Sản phẩm khuyến mãi</h2>
+        <div class="grid grid-cols-4 gap-6 mt-6">
+            <!-- Repeat this block for each product -->
+            <div class="bg-white p-6 rounded shadow">
+                <img src="https://via.placeholder.com/150" alt="Product Image" class="mx-auto">
+                <h3 class="mt-4 text-lg font-bold text-center">Candid BHA</h3>
+                <p class="mt-2 text-center text-pink-500">160,000 Đ <span class="text-red-500 line-through">200,000 Đ</span></p>
+            </div>
+            <!-- End product block -->
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="bg-gray-50 py-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl font-bold text-center text-pink-600">Blog</h2>
+            <div class="grid grid-cols-3 gap-6 mt-6">
+                <!-- Repeat this block for each blog post -->
+                <div class="bg-white p-6 rounded shadow">
+                    <img src="https://via.placeholder.com/150" alt="Blog Image" class="mx-auto">
+                    <h3 class="mt-4 text-lg font-bold text-center">Xu hướng trang điểm 2024</h3>
+                    <p class="mt-2 text-center text-gray-600">Nibh tellus molestie nunc non.</p>
+                    <button class="mt-4 px-4 py-2 bg-pink-500 text-white rounded">Read more</button>
+                </div>
+                <!-- End blog post block -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-pink-500 py-8">
+        <div class="container mx-auto px-6 text-white text-center">
+            <p>&copy; 2024 Logo. All Rights Reserved</p>
+            <p>Email: ty.hoang20024@hufi.edu.vn</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="hover:underline">Chính sách</a>
+                <a href="#" class="hover:underline">Về chúng tôi</a>
+                <a href="#" class="hover:underline">Dịch vụ</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>

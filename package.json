@@ -1,0 +1,18 @@
+{
+  "name": "web-final",
+  "version": "1.0.0",
+  "description": "![Trang chủ](https://github.com/uydeptrai/Web-Final/assets/74178707/84bb1fe6-93cf-4cfe-9b65-ec6c77138d21)\r ## Product Page\r ![Sản phẩm](https://github.com/uydeptrai/Web-Final/assets/74178707/d60a3bdc-afd5-4f19-8b86-091bb70450bb)\r ## Detailed Product Page\r ![Chi tiết sản phẩm](https://github.com/uydeptrai/Web-Final/assets/74178707/b5e58024-57f7-4066-97cc-a0a0a6337a78)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "vite": "^5.3.1"
+  }
+}

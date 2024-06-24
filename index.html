@@ -56,12 +56,12 @@
             <div class="text-left">
                 <h2 class="text-3xl font-bold text-pink-600">TOP 10 Kem dưỡng ẩm giá rẻ cho mọi loại da 2023</h2>
                 <p class="mt-4 text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <button class="mt-6 px-4 py-2 border border-pink-500 text-pink-500 rounded">Xem thêm</button>
+                <button class="mt-6 px-4 py-2 border border-pink-500 text-pink-500 rounded-lg hover:bg-pink-300 hover:text-white">Xem thêm</button>
             </div>
-            <div class="ml-10 relative">
-                <div class="slides relative w-90 h-96 bg-center">
+            <div class="ml-12 relative">
+                <div class="slides w-90 h-90 border border-sky-500 rounded-t-lg">
                     <div class="slide active-slide">
-                        <img src="./assets/imgsld1.png" alt="Product Image 1" class="w-full h-full object-cover rounded-lg">
+                        <img src="./assets/imgsld1.png" alt="Product Image 1" class="w-full h-full object-cover rounded-lg ">
                     </div>
                     <div class="slide">
                         <img src="./assets/imgsld2.png" alt="Product Image 2" class="w-full h-full object-cover rounded-lg">
@@ -70,10 +70,10 @@
                         <img src="./assets/imgsld1.png" alt="Product Image 3" class="w-full h-full object-cover rounded-lg">
                     </div>
                 </div>
-                <button onclick="prevSlide()" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-lg">
+                <button onclick="prevSlide()" class="absolute -left-10 top-1/2 transform -translate-y-1/2 rounded-full p-2 shadow-lg">
                     &#9664;
                 </button>
-                <button onclick="nextSlide()" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white rounded-full p-2 shadow-lg">
+                <button onclick="nextSlide()" class="absolute -right-10 top-1/2 transform -translate-y-1/2 rounded-full p-2 shadow-lg">
                     &#9654;
                 </button>
             </div>
@@ -113,11 +113,20 @@
 
     <!-- Product Categories -->
     <section class="container mx-auto px-6 py-16">
-        <div class="grid grid-cols-3 gap-6 text-center">
-            <div class="bg-blue-100 p-6 rounded">
-                <h3 class="text-xl font-bold">Skincare</h3>
-                <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet.</p>
-                <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded">Learn More</button>
+        <div class="grid grid-cols-3 gap-6">
+            <div class="bg-blue-100 p-6 rounded ">
+                <div class="relative h-50 w-50 ...">
+                    <div class="absolute inset-y-0 left-0 w-50 ...">
+                        <h3 class="text-xl font-bold">Skincare</h3>
+                            <p class="mt-2 text-gray-600">Lorem ipsum dolor sit amet.</p>
+                            <button class="mt-4 px-4 py-2 bg-blue-500 text-white rounded">Learn More</button>
+                    </div>
+                  </div>
+                  <div class="relative h-50 w-50 ...">
+                    <div class="absolute inset-y-0 right-5 w-50 ...">
+                        <img src="./assets/cosmetics_7695955 1.png" alt="">
+                    </div>
+                  </div>
             </div>
             <div class="bg-pink-100 p-6 rounded">
                 <h3 class="text-xl font-bold">Skincare</h3>

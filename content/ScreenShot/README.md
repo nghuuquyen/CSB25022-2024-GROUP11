@@ -10,7 +10,7 @@ LUA Cosmetic's homepage has a modern and neat design, displaying a variety of hi
    
 This page features a variety of cosmetic items available for purchase. The layout is clean and user-friendly.
 
-![Product page screenshot](Picture/Productpage_screenshot.png)
+![Product page screenshot](Picture/ProductPage_screenshot.png)
 
  3. Product page
    

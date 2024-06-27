@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Beauty Products</title>
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="css/awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/btn_contact_fixed.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <title>My Home Page</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" type="text/css" href="css/btn_contact_fixed.css">
+        <link rel="stylesheet" type="text/css" href="css/awesome.min.css">        
+    <style>
+        .slide {
+            display: none;
+        }
+
+        .active-slide {
+            display: block;
+        }
+        .image-container {
+            position: relative;
+            margin: 10px; 
+            padding: 10px; 
+            border: 2px solid #e5e7eb; 
+            border-radius: 10px; 
+        }
+
+        .image-container img {
+            width: calc(100% - 20px); 
+            height: calc(100% - 20px); 
+            object-fit: cover;
+            border-radius: 8px; 
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper" class="home-page">
+        <header class="header">
+            <a id="hamburger" href="#menu"><span></span></a>
+            <div class="header-flex box-wp">
+                <div class="header-left">
+                    <a class="logo" href="/home.html" title="Logo"><img src="/images/LOGO 1.svg" alt="logo"></a>
+                </div>
+                <div class="header-center">
+                    <div class="menu-main">
+                        <nav id="_hmenu" class="navbar">
+                            <div class="navigation box-wp" role="navigation">
+                                <ul>
+                                    <li class="active"><a href="./index.html" title="Home"><span>Trang Chủ</span></a></li>
+                                    <li><a href="#" title="Giới thiệu"><span>Giới thiệu</span></a></li>
+                                    <li><a href="#" title="Sản phẩm"><span>Sản phẩm</span></a>
+                                        <ul>
+                                            <li><a href="#" title="Sữa tắm">Sữa tắm</a></li>
+                                            <li><a href="#" title="Sữa rửa mặt">Sữa rửa mặt</a></li>
+                                            <li><a href="#" title="Chăm sóc cơ thể">Chăm sóc cơ thể</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" title="Khuyến mãi"><span>Khuyến mãi</span></a></li>
+                                    <li><a href="#" title="Blog"><span>Blog</span></a>
+                                        <ul>
+                                            <li><a href="#" title="Review">Review</a></li>
+                                            <li><a href="#" title="Kiến thức làm đẹp">Kiến thức làm đẹp</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" title="Liên hệ"><span>Liên hệ</span></a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="hd-search">
+                        <button type="button" class="b-search"><i
+                                class="fa-sharp fa-regular fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+<!--
+  This example requires some changes to your config:
+  
+  ```
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    plugins: [
+      // ...
+      require('@tailwindcss/forms'),
+    ],
+  }
+  ```
+-->
+<div class="bg-white">
+    <div>
+      <!--
+        Mobile filter dialog
+  
+        Off-canvas filters for mobile, show/hide based on off-canvas filters state.
+      -->
+      <div class="relative z-40 lg:hidden" role="dialog" aria-modal="true">
+        <!--
+          Off-canvas menu backdrop, show/hide based on off-canvas menu state.
+  
+          Entering: "transition-opacity ease-linear duration-300"
+            From: "opacity-0"
+            To: "opacity-100"
+          Leaving: "transition-opacity ease-linear duration-300"
+            From: "opacity-100"
+            To: "opacity-0"
+        -->
+        <div class="fixed inset-0 bg-black bg-opacity-25" aria-hidden="true"></div>
+  
+        <div class="fixed inset-0 z-40 flex">
+          <!--
+            Off-canvas menu, show/hide based on off-canvas menu state.
+  
+            Entering: "transition ease-in-out duration-300 transform"
+              From: "translate-x-full"
+              To: "translate-x-0"
+            Leaving: "transition ease-in-out duration-300 transform"
+              From: "translate-x-0"
+              To: "translate-x-full"
+          -->
+          <div class="relative ml-auto flex h-full w-full max-w-xs flex-col overflow-y-auto bg-white py-4 pb-12 shadow-xl">
+            <div class="flex items-center justify-between px-4">
+              <h2 class="text-lg font-medium text-gray-900">Filters</h2>
+              <button type="button" class="-mr-2 flex h-10 w-10 items-center justify-center rounded-md bg-white p-2 text-gray-400">
+                <span class="sr-only">Close menu</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+  
+            <!-- Filters -->
+
+          </div>
+        </div>
+      </div>
+  
+      <main class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
+
+        </div>
+  
+        <section aria-labelledby="products-heading" class="pb-24 pt-6">
+          <h2 id="products-heading" class="sr-only">Products</h2>
+  
+          <div class="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
+            <!-- Filters -->
+            <form class="hidden lg:block">
+              <h3 class="sr-only">Categories</h3>
+
+  
+              <div class="border-b border-gray-200 py-6">
+                <!-- component -->
+<div>
+
+
+</div>
+
+
+                <!-- Filter section, show/hide based on section state. -->
+
+              </div>
+            
+
+
+            
+
+            </form>
+  
+            <!-- Product grid -->
+            <script src='https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.7.3/dist/alpine.min.js'></script>
+          </div>
+        </section>
+      </main>
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+        <div class="flex flex-col md:flex-row -mx-4">
+          <div class="md:flex-1 px-4">
+            <div x-data="{ image: 1 }" x-cloak>
+              <div class="h-64 md:h-80 rounded-lg bg-gray-100 mb-4">
+                <div x-show="image === 1" class="h-64 md:h-80 rounded-lg bg-gray-100 mb-4 flex items-center justify-center">
+                  <span class="text-5xl">1</span>
+                </div>
+    
+                <div x-show="image === 2" class="h-64 md:h-80 rounded-lg bg-gray-100 mb-4 flex items-center justify-center">
+                  <span class="text-5xl">2</span>
+                </div>
+    
+                <div x-show="image === 3" class="h-64 md:h-80 rounded-lg bg-gray-100 mb-4 flex items-center justify-center">
+                  <span class="text-5xl">3</span>
+                </div>
+    
+                <div x-show="image === 4" class="h-64 md:h-80 rounded-lg bg-gray-100 mb-4 flex items-center justify-center">
+                  <span class="text-5xl">4</span>
+                </div>
+              </div>
+    
+              <div class="flex -mx-2 mb-4">
+                <template x-for="i in 4">
+                  <div class="flex-1 px-2">
+                    <button x-on:click="image = i" :class="{ 'ring-2 ring-indigo-300 ring-inset': image === i }" class="focus:outline-none w-full rounded-lg h-24 md:h-32 bg-gray-100 flex items-center justify-center">
+                      <span x-text="i" class="text-2xl"></span>
+                    </button>
+                  </div>
+                </template>
+              </div>
+            </div>
+          </div>
+          <div class="md:flex-1 px-4">
+            <h2 class="mb-2 leading-tight tracking-tight font-bold text-gray-800 text-2xl md:text-3xl">Lorem ipsum dolor, sit amet consectetur, adipisicing elit.</h2>
+    
+            <div class="flex items-center space-x-4 my-4">
+              <div>
+                <div class="rounded-lg bg-gray-100 flex py-2 px-3">
+                  <span class="text-indigo-400 mr-1 mt-1">$</span>
+                  <span class="font-bold text-pink-300 text-3xl">25</span>
+                </div>
+              </div>
+              <div class="flex-1">
+                <p class="text-pink-500 text-xl font-semibold">Save 12%</p>
+                <p class="text-gray-400 text-sm">Inclusive of all Taxes.</p>
+              </div>
+            </div>
+    
+            <p class="text-gray-500">Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Vitae exercitationem porro saepe ea harum corrupti vero id laudantium enim, libero blanditiis expedita cupiditate a est.</p>
+    
+            <div class="flex py-4 space-x-4">
+              <div class="relative">
+                <div class="text-center left-0 pt-2 right-0 absolute block text-xs uppercase text-gray-400 tracking-wide font-semibold">Qty</div>
+                <select class="cursor-pointer appearance-none rounded-xl border border-gray-200 pl-4 pr-8 h-14 flex items-end pb-1">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+    
+                <svg class="w-5 h-5 text-gray-400 absolute right-0 bottom-0 mb-2 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4" />
+                </svg>
+              </div>
+    
+              <button type="button" class="h-14 px-6 py-2 font-semibold rounded-xl bg-pink-300 hover:bg-pink-600 text-white">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img style="width: 68%;" src="./assets/promot.png" alt="">
+    <section class="">
+      <div style="width: 68%" class=" w-50">
+          <div class="q-title">
+              <label><svg width="44" height="54" viewBox="0 0 44 54" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M32.4048 35.1551C32.0381 35.5825 31.1239 33.2101 30.3587 32.3328C29.9261 31.8369 27.3706 28.8372 26.7743 28.2882C22.7061 24.5429 17.4233 21.9862 11.8623 21.6183C10.0059 21.4955 7.63033 21.6726 5.81689 21.8911C4.73462 22.0216 3.66163 22.2205 2.5857 22.3961C2.4718 22.4146 0.781394 22.7101 0.65396 22.8194C0.446493 22.9974 0.646146 24.0074 0.683863 24.1498C0.911278 25.0075 1.49783 26.5557 1.82014 27.2785C3.38776 30.7931 5.70798 34.2051 8.29568 37.0519C12.2969 41.454 17.5445 44.8307 23.4922 45.7779C25.2272 46.0543 27.5565 46.1218 29.3079 46.0286C29.4532 46.0209 33.6034 45.4965 33.7808 45.581C34.4914 45.92 34.7496 46.8251 35.1714 47.4898C35.6601 48.2599 36.6219 50.431 36.9539 51.1379C37.2404 51.7482 37.5073 52.3687 37.8232 52.9644C37.9812 53.2622 38.0355 53.8048 38.3728 53.8134C38.5569 53.8181 43.2241 52.3326 43.3271 52.0879C43.6417 51.3407 41.6906 49.0811 41.3483 48.3467C40.2278 45.9428 40.1647 44.966 39.4392 42.4256C36.4404 31.924 35.072 20.9785 34.1782 10.1201C33.9828 7.74689 34.1857 3.4796 33.9746 1.10768C33.9497 0.828567 33.7376 0.633878 33.4572 0.622495C32.6345 0.589143 32.0412 0.772214 31.2794 1.06413C31.0811 1.14002 30.83 1.17638 30.7114 1.3524C30.5174 1.64024 30.4685 2.00718 30.413 2.34963C30.0668 4.48098 29.8523 11.2636 29.872 12.2908C29.9212 14.8507 30.0325 17.41 30.188 19.9656C30.4955 25.0211 31.9373 32.5379 32.4048 35.1551Z"
+                          fill="#19610D" />
+                  </svg></label>
+              <h1 class="text-crop" style="padding: 0 5px;">Mô tả sản phẩm</h1>
+          </div>
+          <div class="content" style="text-align: justify;">
+              <p>"Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+              </p>
+              <p>- Công dụng chính: Có tác dụng cải thiện nếp nhăn, bổ sung ẩm hạn chế khô sần, bong tróc và làm mờ thâm nám mang lại làn da căng mịn tràn đầy sức sống.
+                - Loại da sử dụng tốt nhất: Mọi loại da. Đặc biệt là làn da lão hóa
+                - Thành phần chính: Peptide, chiết xuất rễ cam thảo, chiết xuất vỏ cây liễu
+              </p>
+              <img style="width: 100%;margin-top:4%" src="./images/imgdt.png" alt="">
+              <p style="margin-top: 4%;">Clinical 1% Retinol Treatment là một loại kem dưỡng da nhẹ có công thức đặc biệt, hấp thụ nhanh chóng và có tác dụng ngay lập tức để tăng cường dưỡng ẩm và giảm sự xuất hiện của nếp nhăn, đường nhăn và màu da không đồng đều. Chiết xuất cam thảo, yến mạch và các thành phần làm dịu khác giúp làm dịu vết mẩn đỏ.
+                Công thức retinol độc đáo giúp hydrat hóa và mang lại những lợi ích đáng kể 
+                - Phức hợp dưỡng ẩm nâng cao hấp thụ nhanh chóng
+                - Làm mờ sự xuất hiện của nếp nhăn, đường nhăn
+                - Kết cấu kem dưỡng da nhẹ mang lại hiệu quả mạnh mẽ
+                - Sử dụng sau bước làm sạch da, săn chắc và thanh tẩy tế bào chết
+              </p>
+          </div>
+      </div>
+  </section>
+    <section id="list__prd_new" class="thl-pdt-hot thl-pdt">
+      <div class="box-wp">
+          <div class="top-box">
+              <h2 class="p-title">Sản phẩm mới</h2>
+              <div class="tab-menu" id="trade_prd"><button class="active" name="Tất cả" value="-1">Tất
+                      cả</button>&#124;<button class="" name="Bán chạy" value="0">Bán
+                      chạy</button>&#124;<button class="" name="Phổ biến" value="1">Phổ biến</button></div>
+          </div>
+          <div class="pdt-list list-prd">
+              <div class="pdt-item">
+                  <div class="box">
+                      <div class="img"><a href="#" title="Lorem ipsum ipsu"><img
+                                  src="/images/product/lorem-ipsum-ipsu-1717120208.webp"
+                                  alt="Lorem ipsum ipsu"></a></div>
+                      <div class="button-order"><a href="#" title="Xem nhanh" class="btn btn-cart"><i
+                                  class="fa-regular fa-eye"></i></a><a href="#" title="Thêm vào giỏ"
+                              class="btn btn-cart"><i class="fa-regular fa-cart-plus"></i></i></a></div>
+                      <div class="txt">
+                          <h4 class="text-crop-2lines"><a href="#" title="Lorem ipsum ipsu">Lorem ipsum
+                                  ipsu</a></h4>
+                          <p class="pdt-price price-sales">105&nbsp;Đ</p>
+                          <p class="pdt-price">102&nbsp;Đ</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="pdt-item">
+                  <div class="box">
+                      <div class="img"><a href="#" title="Lorem ipsum ipsum"><img
+                                  src="/images/product/lorem-ipsum-ipsum-1717120152.webp"
+                                  alt="Lorem ipsum ipsum"></a></div>
+                      <div class="button-order"><a href="#" title="Xem nhanh" class="btn btn-cart"><i
+                                  class="fa-regular fa-eye"></i></a><a href="#" title="Thêm vào giỏ"
+                              class="btn btn-cart"><i class="fa-regular fa-cart-plus"></i></i></a></div>
+                      <div class="txt">
+                          <h4 class="text-crop-2lines"><a href="#" title="Lorem ipsum ipsum">Lorem ipsum
+                                  ipsum</a></h4>
+                          <p class="pdt-price price-sales">3&nbsp;Đ</p>
+                          <p class="pdt-price">2&nbsp;Đ</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="pdt-item">
+                  <div class="box">
+                      <div class="img"><a href="#" title="Lorem ipsum dol"><img
+                                  src="/images/product/lorem-ipsum-dol-1717119947.webp"
+                                  alt="Lorem ipsum dol"></a></div>
+                      <div class="button-order"><a href="#" title="Xem nhanh" class="btn btn-cart"><i
+                                  class="fa-regular fa-eye"></i></a><a href="#" title="Thêm vào giỏ"
+                              class="btn btn-cart"><i class="fa-regular fa-cart-plus"></i></i></a></div>
+                      <div class="txt">
+                          <h4 class="text-crop-2lines"><a href="#" title="Lorem ipsum dol">Lorem ipsum dol</a>
+                          </h4>
+                          <p class="pdt-price">Giá liên hệ</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="pdt-item">
+                  <div class="box">
+                      <div class="img"><a href="#" title="Lorem ipsum dolo"><img
+                                  src="/images/product/lorem-ipsum-dolo-1717118974.webp"
+                                  alt="Lorem ipsum dolo"></a></div>
+                      <div class="button-order"><a href="#" title="Xem nhanh" class="btn btn-cart"><i
+                                  class="fa-regular fa-eye"></i></a><a href="#" title="Thêm vào giỏ"
+                              class="btn btn-cart"><i class="fa-regular fa-cart-plus"></i></i></a></div>
+                      <div class="txt">
+                          <h4 class="text-crop-2lines"><a href="#" title="Lorem ipsum dolo">Lorem ipsum
+                                  dolo</a></h4>
+                          <p class="pdt-price">Giá liên hệ</p>
+                      </div>
+                  </div>
+              </div>
+
+          </div>
+          <div class="text-center"><a class="btn btn2" href="#" title="Sản phẩm">Xem
+                  thêm</a></div>
+      </div>
+  </section>
+  </div>
+  
+  
+    </div>
+    <footer class="footer">
+        <div class="footer-sitemap">
+            <div class="box-wp">
+                <div class="ft-col1">
+                  <p><img alt="logo" src="images/LOGO 1.svg" style="max-width: 100%;margin-left:8%" /></p>
+                  <p style="margin-top: 20px;">Công ty TNHH ABC<br />
+                        <strong>Địa chỉ:</strong> Hải Châu, Đà nẵng<br />
+                        <strong>Hotline:</strong> 0123 456 789<br />
+                        <strong>Email:</strong> abc@company.com
+                    </p>
+                    <div class="ft-social">
+                        <ul class="social">
+                            <li class="facebook"><a target="_blank" href="#" title="Facebook"><i
+                                        class="fa-brands fa-facebook-f"></i></a></li>
+                            <li class="instagram"><a target="_blank" href="#" title="Instagram"><i
+                                        class="fa-brands fa-instagram"></i></a></li>
+                            <li class="twitter"><a target="_blank" href="#" title="Twitter"><i
+                                        class="fa-brands fa-x-twitter"></i></i></a></li>
+                            <li class="youtube"><a target="_blank" href="#" title="Youtube"><i
+                                        class="fa-brands fa-youtube"></i></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="ft-col2">
+                    <h4 class="f-title">VỀ CHÚNG TÔI</h4>
+                    <ul class="ft-sitemap clearfix">
+                        <li><a href="#" title="Giới thiệu">Giới thiệu</a></li>
+                        <li><a href="#" title="Blog">Blog</a></li>
+                        <li><a href="#" title="Liên hệ">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="ft-col2">
+                    <h4 class="f-title">SẢN PHẨM</h4>
+                    <ul class="ft-sitemap clearfix">
+                        <li><a href="#" title="Sữa tắm">Sữa tắm</a></li>
+                        <li><a href="#" title="Chăm sóc cơ thể">Chăm sóc cơ thể</a></li>
+                        <li><a href="#" title="Kem dưỡng mặt">Kem dưỡng mặt</a></li>
+                        <li><a href="#" title="Sữa rửa mặt">Sữa rửa mặt</a></li>
+                    </ul>
+                </div>
+                <div class="ft-col1">
+                    <h4 class="f-title">CHÍNH SÁCH & QUY ĐỊNH</h4>
+                    <ul class="ft-sitemap clearfix">
+                        <li><a href="#" title="Hướng dẫn mua hàng">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#" title="Chính sách thanh toán">Chính sách thanh toán</a></li>
+                        <li><a href="#" title="Chính sách bảo hành">Chính sách bảo hành</a></li>
+                        <li><a href="#" title="Chính sách vận chuyển">Chính sách vận chuyển</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="box-wp">
+                <div class="copyright">
+                    Copyright © 2024 Designer, All Rights Reserved
+                </div>
+                <div class="dnw">Designed and Maintained by <a><img
+                  alt="Designer" style="margin-top: 0px;height: 26px;" src="/images/LOGO 1.svg"></a></div> <a target="_blank" href="#" title="Designer">
+          </div>
+        </div>
+    </footer>
+    <a href="javascript:void(0)" title="Lên đầu trang" id="go-top"></a>
+    <div id="box--contact">
+        <!-- button contact -->
+        <script>
+            var popupWinWidth = 600;
+            var popupWinHeight = 600;
+            var left = (screen.width - popupWinWidth) / 2;
+            var topw = (screen.height - popupWinHeight) / 3;
+            left + "," + screen.width;
+        </script>
+
+
+        <div id="inf-contact" class="open-contact">
+            <div class="item"><a href="#" title="Phone" target="_blank"><img alt="Icon"
+                        src="/images/icon-contact.png"></a>
+                <div><a href="tel:' . getConstant('tell_contact') . '" title="Phone" target="_blank">
+                        <p class="top">0123 456 789</p>
+                        <p class="bot">(8h - 17h30)</p>
+                    </a></div>
+            </div>
+            <div class="item"><a href="#" title="Zalo" target="_blank"><img alt="Icon"
+                        src="/images/icon-contact-zalo.png"></a>
+                <div><a href="#" title="Zalo" target="_blank">
+                        <p class="top">Zalo</p>
+                        <p class="bot">(8h - 17h30)</p>
+                    </a></div>
+            </div>
+
+            <div class="item"><a href="#" title="facebook" target="_blank"><img alt="Icon"
+                        src="/images/icon-contact-fb.png"></a>
+                <div><a href="#" title="facebook" target="_blank">
+                        <p class="top">Facebook</p>
+                        <p class="bot">(8h - 17h30)</p>
+                    </a></div>
+            </div>
+        </div>
+        <div id="button-contact">
+            <img alt="icon-contact phone" class="mySlides w3-animate-right i-contact-phone"
+                src="/images/icon-contact.png" />
+            <img alt="icon-contact zalo" class="mySlides w3-animate-right i-contact-zl"
+                src="/images/icon-contact-zalo.png" />
+            <img alt="icon-contact facbook" class="mySlides w3-animate-right i-contact-fb"
+                src="/images/icon-contact-fb.png" />
+        </div>
+
+        <script>
+            const infContact = document.querySelector("#inf-contact");
+            const btnContact = document.querySelector("#button-contact");
+            infContact.style.display = "none";
+            btnContact.onclick = function () {
+
+                if (infContact.style.display !== "none") infContact.style.display = "none";
+                else infContact.style.display = "flex";
+            };
+        </script>
+
+        <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+                for (i = 0; i < x.length; i++) {
+                    // x[i].style.display = "none";
+                    x[i].classList.remove('active');
+                }
+                myIndex++;
+                if (myIndex > x.length) {
+                    myIndex = 1
+                }
+                // x[myIndex - 1].style.display = "block";
+                x[myIndex - 1].classList.add('active');
+                setTimeout(carousel, 3500);
+            }
+        </script>
+    </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+    integrity="sha512-YHQNqPhxuCY2ddskIbDlZfwY6Vx3L3w9WRbyJCY81xpqLmrM6rL2+LocBgeVHwGY9SXYfQWJ+lcEWx1fKS2s8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="js/carousel.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript">
+    $('#_slide_home').owlCarousel({
+        loop: true,
+        nav: true,
+        dots: false,
+        animateOut: 'fadeOut',
+        smartSpeed: 450,
+        items: 1,
+        navText: [
+            "<i class='fa-solid fa-caret-left' style='color: #BB6871;'></i>",
+            "<i class='fa-solid fa-caret-right' style='color: #BB6871;'></i>",
+        ],
+        autoplay: true,
+        autoplayHoverPause: true,
+    });
+    $('#_partner').owlCarousel({
+        loop: true,
+        nav: false,
+        dots: false,
+        margin: 30,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 3
+            },
+            640: {
+                items: 4,
+                margin: 50
+            },
+            960: {
+                items: 5,
+                margin: 80
+            },
+            1100: {
+                items: 6,
+                margin: 100
+            }
+        }
+    });
+</script>
+
+
+</html>

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beauty Products</title>
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+<link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.theme.default.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap" rel="stylesheet">
+    <style>
+        .slide {
+            display: none;
+        }
+
+        .active-slide {
+            display: block;
+        }
+        .image-container {
+            position: relative;
+            margin: 10px; 
+            padding: 10px; 
+            border: 2px solid #e5e7eb; 
+            border-radius: 10px; 
+        }
+
+        .image-container img {
+            width: calc(100% - 20px); 
+            height: calc(100% - 20px); 
+            object-fit: cover;
+            border-radius: 8px; 
+        }
+    </style>
+</head>
+
+<body class="bg-pink-50">
+
+    <div id="wrapper" class="home-page">
+        <header class="header">
+            <a id="hamburger" href="#menu"><span></span></a>
+            <div class="header-flex box-wp">
+                <div class="header-left">
+                    <a class="logo" href="/home.html" title="Logo"><img src="/images/LOGO 1.svg" alt="logo"></a>
+                </div>
+                <div class="header-center">
+                    <div class="menu-main">
+                        <nav id="_hmenu" class="navbar">
+                            <div class="navigation box-wp" role="navigation">
+                                <ul>
+                                    <li class="active"><a href="#" title="Home"><span>Trang Chủ</span></a></li>
+                                    <li><a href="#" title="Giới thiệu"><span>Giới thiệu</span></a></li>
+                                    <li><a href="#" title="Sản phẩm"><span>Sản phẩm</span></a>
+                                        <ul>
+                                            <li><a href="#" title="Sữa tắm">Sữa tắm</a></li>
+                                            <li><a href="#" title="Sữa rửa mặt">Sữa rửa mặt</a></li>
+                                            <li><a href="#" title="Chăm sóc cơ thể">Chăm sóc cơ thể</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" title="Khuyến mãi"><span>Khuyến mãi</span></a></li>
+                                    <li><a href="#" title="Blog"><span>Blog</span></a>
+                                        <ul>
+                                            <li><a href="#" title="Review">Review</a></li>
+                                            <li><a href="#" title="Kiến thức làm đẹp">Kiến thức làm đẹp</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#" title="Liên hệ"><span>Liên hệ</span></a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="hd-search">
+                        <button type="button" class="b-search"><i class="fa-solid fa-cart-shopping"></i></button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+    integrity="sha512-YHQNqPhxuCY2ddskIbDlZfwY6Vx3L3w9WRbyJCY81xpqLmrM6rL2+LocBgeVHwGY9SXYfQWJ+lcEWx1fKS2s8A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="js/carousel.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript">
+    $('#_slide_home').owlCarousel({
+        loop: true,
+        nav: true,
+        dots: false,
+        animateOut: 'fadeOut',
+        smartSpeed: 450,
+        items: 1,
+        navText: [
+            "<i class='fa-solid fa-caret-left' style='color: #BB6871;'></i>",
+            "<i class='fa-solid fa-caret-right' style='color: #BB6871;'></i>",
+        ],
+        autoplay: true,
+        autoplayHoverPause: true,
+    });
+    $('#pdt_menu').owlCarousel({
+        loop: true,
+        nav: false,
+        dots: false,
+        margin: 10,
+        autoplay: false,
+        responsive: {
+            0: {
+                items: 1,
+                margin: 16,
+                stagePadding: 50
+            },
+            581: {
+                items: 2,
+                margin: 30,
+                stagePadding: 50
+            },
+            768: {
+                items: 3,
+                margin: 20,
+                stagePadding: 80
+            },
+            1100: {
+                items: 4,
+                margin: 30
+            }
+        }
+    });
+</script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    var slider = $("#slider");
+    var thumb = $("#thumb");
+    var slidesPerPage = 4; //globaly define number of elements per page
+    var syncedSecondary = true;
+    slider.owlCarousel({
+        items: 1,
+        slideSpeed: 2000,
+        nav: false,
+        autoplay: false, 
+        dots: false,
+        loop: true,
+        responsiveRefreshRate: 200
+    }).on('changed.owl.carousel', syncPosition);
+    thumb
+        .on('initialized.owl.carousel', function() {
+            thumb.find(".owl-item").eq(0).addClass("current");
+        })
+        .owlCarousel({
+            items: slidesPerPage,
+            dots: false,
+            nav: true,
+            item: 4,
+            smartSpeed: 200,
+            slideSpeed: 500,
+            slideBy: slidesPerPage, 
+          navText: ['<svg width="18px" height="18px" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>', '<svg width="25px" height="25px" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
+            responsiveRefreshRate: 100
+        }).on('changed.owl.carousel', syncPosition2);
+    function syncPosition(el) {
+        var count = el.item.count - 1;
+        var current = Math.round(el.item.index - (el.item.count / 2) - .5);
+        if (current < 0) {
+            current = count;
+        }
+        if (current > count) {
+            current = 0;
+        }
+        thumb
+            .find(".owl-item")
+            .removeClass("current")
+            .eq(current)
+            .addClass("current");
+        var onscreen = thumb.find('.owl-item.active').length - 1;
+        var start = thumb.find('.owl-item.active').first().index();
+        var end = thumb.find('.owl-item.active').last().index();
+        if (current > end) {
+            thumb.data('owl.carousel').to(current, 100, true);
+        }
+        if (current < start) {
+            thumb.data('owl.carousel').to(current - onscreen, 100, true);
+        }
+    }
+    function syncPosition2(el) {
+        if (syncedSecondary) {
+            var number = el.item.index;
+            slider.data('owl.carousel').to(number, 100, true);
+        }
+    }
+    thumb.on("click", ".owl-item", function(e) {
+        e.preventDefault();
+        var number = $(this).index();
+        slider.data('owl.carousel').to(number, 300, true);
+    });
+
+
+        $(".qtyminus").on("click",function(){
+            var now = $(".qty").val();
+            if ($.isNumeric(now)){
+                if (parseInt(now) -1> 0)
+                { now--;}
+                $(".qty").val(now);
+            }
+        })
+        $(".qtyplus").on("click",function(){
+            var now = $(".qty").val();
+            if ($.isNumeric(now)){
+                $(".qty").val(parseInt(now)+1);
+            }
+        });
+});
+</script>
+
+<div class="bg-gray-100 dark:bg-gray-800 py-8"  style="margin-top:8%">
+
+  <div class="container mx-auto px-6 py-16">
+    <div class="row">
+      <div class="col-md-6">
+        <div id="slider" class="owl-carousel product-slider">
+      <div class="item">
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" />
+      </div>
+      <div class="item">
+          <img src="https://i.ytimg.com/vi/PJ_zomNMK_s/maxresdefault.jpg" />
+      </div>
+      <div class="item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+      </div>
+      <div class="item">
+          <img src="https://i.ytimg.com/vi/PJ_zomNMK_s/maxresdefault.jpg" />
+      </div>
+      <div class="item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+      </div>
+      <div class="item">
+          <img src="https://i.ytimg.com/vi/PJ_zomNMK_s/maxresdefault.jpg" />
+      </div>
+      <div class="item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+      </div>
+    </div>
+    <div id="thumb" class="owl-carousel product-thumb">
+      <div class="item">
+          <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" />
+      </div>
+      <div class="item">
+          <img src="https://i.ytimg.com/vi/PJ_zomNMK_s/maxresdefault.jpg" />
+      </div>
+      <div class="item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+      </div>
+      <div class="item">
+          <img src="https://i.ytimg.com/vi/PJ_zomNMK_s/maxresdefault.jpg" />
+      </div>
+      <div class="item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+      </div>
+      <div class="item">
+          <img src="https://i.ytimg.com/vi/PJ_zomNMK_s/maxresdefault.jpg" />
+      </div>
+      <div class="item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQI6nUmObt62eDkqNSmIvCN_KkQExtbpJmUbVx_eTh_Y3v3r-Jw" />
+      </div>
+    </div>
+      </div>
+      <div class="col-md-6">
+        <div class="product-dtl">
+          <div class="product-info">
+            <h2 class="text-crop-2lines">TOP 10 Kem dưỡng ẩm giá rẻ cho mọi loại da 2023</h2>
+            <div class="reviews-counter">
+          <div class="rate">
+              <input type="radio" id="star5" name="rate" value="5" checked />
+              <label for="star5" title="text">5 stars</label>
+              <input type="radio" id="star4" name="rate" value="4" checked />
+              <label for="star4" title="text">4 stars</label>
+              <input type="radio" id="star3" name="rate" value="3" checked />
+              <label for="star3" title="text">3 stars</label>
+              <input type="radio" id="star2" name="rate" value="2" />
+              <label for="star2" title="text">2 stars</label>
+              <input type="radio" id="star1" name="rate" value="1" />
+              <label for="star1" title="text">1 star</label>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div>
+        </div>
+          </div>
+          <div>
+          </div>
+         
+          <div class="product-price-discount"><span>180.000 Đ</span><span class="line-through">$180.000 Đ</span></div>
+          <div>
+            <div>
+              <label for="dungtich">Dung tích</label>
+              <div class="flex">
+                <button type="button" class="form-control w-10 rounded rounded-full border border-pink-500 ">30ml</button>
+                <button class="form-control w-10 rounded-full">30ml</button>
+                <!-- <input class="form-control bg-white w-12 rounded-full" type="text" placeholder="30ml" readonly>
+                <input class="form-control bg-white w-12 rounded rounded-3xl" type="text" placeholder="5ml" readonly> -->
+              </div>
+
+            </div>
+            <!-- <div class="col-md-6">
+              <label for="muihuong">Mùi hương</label>
+          <select id="muihuong" name="muihuong" class="form-control">
+            <option>Blue</option>
+            <option>Green</option>
+            <option>Red</option>
+          </select>
+            </div> -->
+          </div>
+          <div class="product-count">
+            <p class="text-danger">Sản phẩm chỉ còn 1</p>
+            <label for="size">Số lượng</label>
+            <form action="#" class="display-flex">
+            <button class="qtyminus btn btn-small btn-danger">-</button>
+            <input type="text" name="quantity" value="1" class="qty">
+            <button class="qtyplus btn btn-small btn-danger">+</button>
+        </form>
+        <div class="px-1 py-3">
+          <button class=" btn btn-danger rounded rounded-full"><a href="#" class="text-white font-bold text-sm">Thêm vào giỏ hàng</a></button>
+        <button class=" btn btn-pink rounded rounded-full"><a href="#" class="text-white font-bold text-sm">Mua ngay</a></button>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="grid grid-cols-3 mt-20">
+    <!-- Repeat this block for each product -->
+
+        <img class="rounded-md" src="./assets/b1dcfe76-80d6-46fd-a415-02a39086e9e9 1.png" alt="Product Image" class="mx-auto">
+        <img class="rounded-md" src="./assets/e125c464-6660-493a-939b-ab4dc2253e12 1.png" alt="Product Image" class="mx-auto">
+        <img class="rounded-md" src="./assets/bd1b20c8-965d-4c49-9561-63e3b143ba47 1.png" alt="Product Image" class="mx-auto">
+    <!-- End product block -->
+  </div>
+
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-row md:flex-col -mx-5">
+        <div class=" pt-10 px-4 self-center">
+            <h1 class="text-2xl font-bold text-gray-800 dark:text-white mb-2">Mô tả sản phẩm</h1>
+            <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+              - Công dụng chính: Có tác dụng cải thiện nếp nhăn, bổ sung ẩm hạn chế khô sần, bong tróc và làm mờ thâm nám mang lại làn da căng mịn tràn đầy sức sống.
+            </p>
+            <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+              - Loại da sử dụng tốt nhất: Mọi loại da. Đặc biệt là làn da lão hóa
+            </p>
+            <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+              - Thành phần chính: Peptide, chiết xuất rễ cam thảo, chiết xuất vỏ cây liễu
+            </p>
+            <div class="mb-4">
+              <img class="w-65 h-full object-cover" src="./assets/serum-paulas-choice-clinical-1-retinol-beautybox_5891efdf8c1b4144837725993e8e11ac 1.png" alt="Product Image">
+            <div>
+                <p class="text-gray-600 dark:text-gray-300 text-sm mt-2">
+                  Clinical 1% Retinol Treatment là một loại kem dưỡng da nhẹ có công thức đặc biệt, hấp thụ nhanh chóng và có tác dụng ngay lập tức để tăng cường dưỡng ẩm và giảm sự xuất hiện của nếp nhăn, đường nhăn và màu da không đồng đều. Chiết xuất cam thảo, yến mạch và các thành phần làm dịu khác giúp làm dịu vết mẩn đỏ.
+                </p>
+                <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                  Công thức retinol độc đáo giúp hydrat hóa và mang lại những lợi ích đáng kể 
+                </p>
+                <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                  - Phức hợp dưỡng ẩm nâng cao hấp thụ nhanh chóng
+                </p>
+                <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                  - Làm mờ sự xuất hiện của nếp nhăn, đường nhăn
+                </p>
+                <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                  - Kết cấu kem dưỡng da nhẹ mang lại hiệu quả mạnh mẽ
+                </p>
+                <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">
+                  - Sử dụng sau bước làm sạch da, săn chắc và thanh tẩy tế bào chết
+                </p>
+            </div>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <section class="container mx-auto px-6 py-16">
+    <h2 class="text-2xl font-bold">Gợi ý cho bạn</h2>
+    <div class="grid grid-cols-4 gap-6 mt-6">
+        <!-- Repeat this block for each product -->
+        <div class="bg-white p-6 overflow-hidden rounded-2xl shadow">
+            <img class="w-full rounded-md" src="./assets/image 4.png" alt="Product Image" class="mx-auto">
+            <h3 class="mt-4 text-lg font-bold text-center">Candid BHA</h3>
+            <p class="mt-2 text-center text-pink-500">160,000 Đ</p><span class="text-red-500 line-through">200,000 Đ</span></p>
+        </div>
+        <div class="bg-white p-6 overflow-hidden rounded-2xl shadow">
+            <img class="w-full rounded-md" src="./assets/image 4.png" alt="Product Image" class="mx-auto">
+            <h3 class="mt-4 text-lg font-bold text-center">Candid BHA</h3>
+            <p class="mt-2 text-center text-pink-500">160,000 Đ</p><span class="text-red-500 line-through">200,000 Đ</span></p>
+        </div>
+        <div class="bg-white p-6 overflow-hidden rounded-2xl shadow">
+            <img class="w-full rounded-md" src="./assets/image 4.png" alt="Product Image" class="mx-auto">
+            <h3 class="mt-4 text-lg font-bold text-center">Candid BHA</h3>
+            <p class="mt-2 text-center text-pink-500">160,000 Đ</p><span class="text-red-500 line-through">200,000 Đ</span></p>
+        </div>
+        <div class="bg-white p-6 overflow-hidden rounded-2xl shadow">
+            <img class="w-full rounded-md" src="./assets/image 4.png" alt="Product Image" class="mx-auto">
+            <h3 class="mt-4 text-lg font-bold text-center">Candid BHA</h3>
+            <p class="mt-2 text-center text-pink-500">160,000 Đ</p><span class="text-red-500 line-through">200,000 Đ</span></p>
+        </div>
+        <!-- End product block -->
+    </div>
+</section>
+
+
+<div>
+  <img src="./images/promo.png" alt="">
+</div>
+
+</div>
+
+
+
+    <!-- Footer -->
+    <footer class="relative bg-pink-100 pt-8 pb-6">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-wrap text-left lg:text-left">
+            <div class="w-full lg:w-6/12 px-4">
+              <h4 class="text-3xl fonat-semibold text-blueGray-700">Lua Cosmetic</h4>
+              <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+                Lorem ipsum dolor sit amet, consectetaur adipisicing elit
+              </h5>
+              <div class="mt-6 lg:mb-0 mb-6">
+                <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                  <i class="fab fa-twitter"></i></button><button class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                  <i class="fab fa-facebook-square"></i></button><button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                  <i class="fab fa-dribbble"></i></button><button class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+                  <i class="fab fa-github"></i>
+                </button>
+              </div>
+            </div>
+            <div class="w-full lg:w-6/12 px-4">
+              <div class="flex flex-wrap items-top mb-6">
+                <div class="w-full lg:w-4/12 px-4 ml-auto">
+                  <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful Links</span>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/presentation?ref=njs-profile">About Us</a>
+                    </li>
+                    <li>
+                      <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://blog.creative-tim.com?ref=njs-profile">Blog</a>
+                    </li>
+                    <li>
+                      <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.github.com/creativetimofficial?ref=njs-profile">Github</a>
+                    </li>
+                    <li>
+                      <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile">Free Products</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="w-full lg:w-4/12 px-4">
+                  <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Other Resources</span>
+                  <ul class="list-unstyled">
+                    <li>
+                      <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile"></a>
+                    </li>
+                    <li>
+                      <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/terms?ref=njs-profile">Terms &amp; Conditions</a>
+                    </li>
+                    <li>
+                      <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/privacy?ref=njs-profile">Privacy Policy</a>
+                    </li>
+                    <li>
+                      <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/contact-us?ref=njs-profile">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="my-6 border-blueGray-300">
+          <div class="flex flex-wrap items-center md:justify-between justify-center">
+            <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+              <div class="text-sm text-blueGray-500 font-semibold py-1">
+                Copyright © <span id="get-current-year">2024</span><a href="https://www.creative-tim.com/product/notus-js" class="text-blueGray-500 hover:text-gray-800" target="_blank">Designed by
+                <a href="https://www.creative-tim.com?ref=njs-profile" class="text-blueGray-500 hover:text-blueGray-800">Uy</a>.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </footer>
+
+</body>
+
+</html>

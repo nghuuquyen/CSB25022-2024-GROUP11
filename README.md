@@ -21,10 +21,10 @@ This project is built with robust and modern technologies to ensure high perform
 [https://github.com/uydeptrai/Web-Final](https://stirring-stroopwafel-2e38e7.netlify.app/productpage)
 
 ## Detail of the project
-- [Wireframe](/WireFrame/README.md)
-- [Planning](/Planning/README.md)
-- [Task](/Task/README.md)
-- [ERD diagram](/databaseimg/README.md)
+- [Wireframe](WireFrame/README.md)
+- [Planning](Planning/README.md)
+- [Task](Task/README.md)
+- [ERD diagram](ERD Diagram/README.md)
 - [ScreenShot](/Screenshot/README.md)
 
 ## Prerequisites

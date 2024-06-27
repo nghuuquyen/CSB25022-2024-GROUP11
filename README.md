@@ -17,7 +17,7 @@ This project is built with robust and modern technologies to ensure high perform
 - Build the frontend assets with npm run build.
 
 ## Our mockup: 
-[https://github.com/uydeptrai/Web-Final](https://stirring-stroopwafel-2e38e7.netlify.app/productpage)
+[https://stirring-stroopwafel-2e38e7.netlify.app/productpage](https://stirring-stroopwafel-2e38e7.netlify.app/productpage)
 
 ## Detail of the project
 - [Wireframe](content/WireFrame/READMY.md)

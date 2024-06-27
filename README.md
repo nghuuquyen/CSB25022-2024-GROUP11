@@ -72,7 +72,7 @@ npm install
 Create `.env` like `.env.example` and set the values. For example:
 ```
 PORT=3000
-SITE_NAME="LBJ"
+SITE_NAME="LUA"
 NODE_ENV=development
 DATABASE_URL="mysql://root:password@localhost:3306/apps"
 ```

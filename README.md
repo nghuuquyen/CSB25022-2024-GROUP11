@@ -6,9 +6,13 @@ Welcome to the **LUA Cosmetic**.This is an e-commerce platform designed to provi
 ## Technologies
 This project is built with robust and modern technologies to ensure high performance and scalability:
 -NodeJS: is used on the server side to handle requests quickly and efficiently.
+
 -Vite: supports fast development and building of the user interface with instant module reloading.
+
 -Tailwind CSS: enables the creation of modern, responsive UI designs without extensive custom CSS.
+
 -XAMPP: provides a comprehensive development environment for PHP and MySQL, making it easy to set up and use.
+
 -Morgan for logging HTTP requests.
 
 

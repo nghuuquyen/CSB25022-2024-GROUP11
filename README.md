@@ -24,7 +24,7 @@ This project is built with robust and modern technologies to ensure high perform
 - [Planning](content/Planning/READMY.md)
 - [Task](content/Task/READMY.md)
 - [ERD diagram](content/databaseimg/README.md)
-- [ScreenShot](content/Screenshot/README.md)
+- [ScreenShot](content/ScreenShot/README.md)
 
 ## Prerequisites
 

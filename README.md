@@ -6,7 +6,6 @@ Welcome to the **LUA Cosmetic**.This is an e-commerce platform designed to provi
 ## Technologies
 This project is built with robust and modern technologies to ensure high performance and scalability:
 - templates for rendering HTML pages.
-- MySQL database.
 - Environment variables using dotenv.
 - Tailwind CSS for styling.
 - Nodemon for auto-reloading the server during development.
@@ -21,18 +20,16 @@ This project is built with robust and modern technologies to ensure high perform
 [https://github.com/uydeptrai/Web-Final](https://stirring-stroopwafel-2e38e7.netlify.app/productpage)
 
 ## Detail of the project
-- [Wireframe](content/wireFrame/README.md)
-- [Planning](content/Planning/README.md)
-- [Task](content/Task/README.md)
-- [ERD diagram](content/databaseimg/README.md)
-- [ScreenShot](content/screenshot/README.md)
+- [Task](content\Task\READMY.md)
+- [Wireframe](content\WireFrame\READMY.md)
+- [Planning](content\Planning\READMY.md)
+- [ScreenShot](content\ScreenShot\README.md)
 
 ## Prerequisites
 
 Before running this project, ensure you have the following installed:
 
 - [Node.js](https://nodejs.org/en/download/)
-- [MySQL](https://dev.mysql.com/downloads/mysql/)
 - [Git](https://git-scm.com/downloads)
 
 ## Project Structure

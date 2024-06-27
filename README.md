@@ -5,14 +5,11 @@ Welcome to the **LUA Cosmetic**.This is an e-commerce platform designed to provi
 
 ## Technologies
 This project is built with robust and modern technologies to ensure high performance and scalability:
-- EJS templates for rendering HTML pages.
-- Prisma ORM for database access.
+- templates for rendering HTML pages.
 - MySQL database.
 - Environment variables using dotenv.
 - Tailwind CSS for styling.
-- ESLint and Prettier for code linting and formatting.
 - Nodemon for auto-reloading the server during development.
-- Winston for logging.
 - Express-validator for request validation.
 - Helmet for securing the app by setting various HTTP headers.
 - Compression for compressing the response data.

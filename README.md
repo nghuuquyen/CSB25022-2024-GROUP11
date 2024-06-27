@@ -5,16 +5,12 @@ Welcome to the **LUA Cosmetic**.This is an e-commerce platform designed to provi
 
 ## Technologies
 This project is built with robust and modern technologies to ensure high performance and scalability:
-- templates for rendering HTML pages.
-- Environment variables using dotenv.
-- Tailwind CSS for styling.
-- Nodemon for auto-reloading the server during development.
-- Express-validator for request validation.
-- Helmet for securing the app by setting various HTTP headers.
-- Compression for compressing the response data.
+-NodeJS: is used on the server side to handle requests quickly and efficiently.
+-Vite: supports fast development and building of the user interface with instant module reloading.
+-Tailwind CSS: enables the creation of modern, responsive UI designs without extensive custom CSS.
+-XAMPP: provides a comprehensive development environment for PHP and MySQL, making it easy to set up and use.
 - Morgan for logging HTTP requests.
-- Vite for building the frontend assets. Support - HMR (Hot Module Replacement) in development mode.
-- Build the frontend assets with npm run build.
+
 
 ## Our mockup: 
 [[https://github.com/uydeptrai/Web-Final]([https://stirring-stroopwafel-2e38e7.netlify.app/productpage](https://luacosmetic.netlify.app/?fbclid=IwZXh0bgNhZW0CMTAAAR1MIYmSDKzK-DLN8B8UZ9iqoGuaxckL2nQyxFM7GHH-S6oU11Q_lX7BaS8_aem_N67nQ6hCzAhI_xmWY0spUw))]([https://stirring-stroopwafel-2e38e7.netlify.app/productpage](https://luacosmetic.netlify.app/?fbclid=IwZXh0bgNhZW0CMTAAAR1MIYmSDKzK-DLN8B8UZ9iqoGuaxckL2nQyxFM7GHH-S6oU11Q_lX7BaS8_aem_N67nQ6hCzAhI_xmWY0spUw))
@@ -44,7 +40,6 @@ Here is an overview of the main directories and files in the project:
 - **server.js**: The main entry point of the application.
 - **package.json**: Lists the project dependencies and scripts.
 
-## Setup Instructions
 
 ## Contributors
 

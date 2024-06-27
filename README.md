@@ -5,6 +5,7 @@ Welcome to the **LUA Cosmetic**.This is an e-commerce platform designed to provi
 
 ## Technologies
 This project is built with robust and modern technologies to ensure high performance and scalability:
+
 -NodeJS: is used on the server side to handle requests quickly and efficiently.
 
 -Vite: supports fast development and building of the user interface with instant module reloading.

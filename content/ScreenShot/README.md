@@ -16,7 +16,7 @@ This page features a variety of cosmetic items available for purchase. The layou
    
 LUA Cosmetic's product page. This page features the hottest products on the market.
 
-![About us page screenshot](Picture/AboutUs_screenshot)
+![About us page screenshot](Picture/AboutUs_screenshot.png)
 
  4. About us page
    

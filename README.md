@@ -17,7 +17,7 @@ This project is built with robust and modern technologies to ensure high perform
 - Build the frontend assets with npm run build.
 
 ## Our mockup: 
-[https://github.com/uydeptrai/Web-Final]([https://stirring-stroopwafel-2e38e7.netlify.app/productpage](https://luacosmetic.netlify.app/?fbclid=IwZXh0bgNhZW0CMTAAAR1MIYmSDKzK-DLN8B8UZ9iqoGuaxckL2nQyxFM7GHH-S6oU11Q_lX7BaS8_aem_N67nQ6hCzAhI_xmWY0spUw))
+[[https://github.com/uydeptrai/Web-Final]([https://stirring-stroopwafel-2e38e7.netlify.app/productpage](https://luacosmetic.netlify.app/?fbclid=IwZXh0bgNhZW0CMTAAAR1MIYmSDKzK-DLN8B8UZ9iqoGuaxckL2nQyxFM7GHH-S6oU11Q_lX7BaS8_aem_N67nQ6hCzAhI_xmWY0spUw))]([https://stirring-stroopwafel-2e38e7.netlify.app/productpage](https://luacosmetic.netlify.app/?fbclid=IwZXh0bgNhZW0CMTAAAR1MIYmSDKzK-DLN8B8UZ9iqoGuaxckL2nQyxFM7GHH-S6oU11Q_lX7BaS8_aem_N67nQ6hCzAhI_xmWY0spUw))
 [https://github.com/uydeptrai/Web-Final]()
 
 ## Detail of the project

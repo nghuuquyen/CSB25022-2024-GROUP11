@@ -2,7 +2,7 @@
 
 ##### Home Page
 
-![Home Page](HomePage.png))
+![Home Page](HomePage.png)
 
 - The home page serves as the entry point for users
   - A prominent header with the site logo, navigation menu, and search bar.

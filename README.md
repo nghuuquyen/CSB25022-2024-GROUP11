@@ -5,26 +5,22 @@ Welcome to the **LUA Cosmetic**.This is an e-commerce platform designed to provi
 
 ## Technologies
 This project is built with robust and modern technologies to ensure high performance and scalability:
-- templates for rendering HTML pages.
-- Environment variables using dotenv.
-- Tailwind CSS for styling.
-- Nodemon for auto-reloading the server during development.
-- Express-validator for request validation.
-- Helmet for securing the app by setting various HTTP headers.
-- Compression for compressing the response data.
-- Morgan for logging HTTP requests.
-- Vite for building the frontend assets. Support - HMR (Hot Module Replacement) in development mode.
-- Build the frontend assets with npm run build.
+
+  - **Vite**: supports fast development and building of the user interface with instant module reloading.
+  - **Tailwind CSS**: enables the creation of modern, responsive UI designs without extensive custom CSS.
+  - **XAMPP**: provides a comprehensive development environment for PHP and MySQL, making it easy to set up and use.
+  - **NodeJS**: is used on the server side to handle requests quickly and efficiently.
+
 
 ## Our mockup: 
-[https://github.com/uydeptrai/Web-Final](https://stirring-stroopwafel-2e38e7.netlify.app/productpage)
+[[https://github.com/uydeptrai/Web-Final]([https://stirring-stroopwafel-2e38e7.netlify.app/productpage](https://luacosmetic.netlify.app/?fbclid=IwZXh0bgNhZW0CMTAAAR1MIYmSDKzK-DLN8B8UZ9iqoGuaxckL2nQyxFM7GHH-S6oU11Q_lX7BaS8_aem_N67nQ6hCzAhI_xmWY0spUw))]([https://stirring-stroopwafel-2e38e7.netlify.app/productpage](https://luacosmetic.netlify.app/?fbclid=IwZXh0bgNhZW0CMTAAAR1MIYmSDKzK-DLN8B8UZ9iqoGuaxckL2nQyxFM7GHH-S6oU11Q_lX7BaS8_aem_N67nQ6hCzAhI_xmWY0spUw))
+[https://github.com/uydeptrai/Web-Final]()
 
 ## Detail of the project
-- [Wireframe](content/wireFrame/README.md)
-- [Planning](content/Planning/README.md)
-- [Task](content/Task/README.md)
-- [ERD diagram](content/databaseimg/README.md)
-- [ScreenShot](content/screenshot/README.md)
+- [Wireframe](content/WireFrame/READMY.md)
+- [Planning](content/Planning/READMY.md)
+- [Task](content/Task/READMY.md)
+- [ScreenShot](content/ScreenShot/README.md)
 
 ## Prerequisites
 
@@ -44,74 +40,6 @@ Here is an overview of the main directories and files in the project:
 - **server.js**: The main entry point of the application.
 - **package.json**: Lists the project dependencies and scripts.
 
-## Setup Instructions
-
-1. **Clone the Repository**
-
-```bash
-git clone https://github.com/uydeptrai/Web-Final
-
-cd WebDesignProject
-cd webapp
-```
-
-2. **Install Dependencies**
-
-Install all required dependencies using npm:
-
-```bash
-npm install
-```
-
-3. **Database Setup**
-
-- Ensure MySQL is running on your machine.
-- Create a new database called `apps`.
-- Update the database configuration in environment variables (`.env` file).
-
-Create `.env` like `.env.example` and set the values. For example:
-```
-PORT=3000
-SITE_NAME="LBJ"
-NODE_ENV=development
-DATABASE_URL="mysql://root:password@localhost:3306/apps"
-```
-
-4. **Run Database Migrations**
-
-Run the migrations to set up the database schema:
-
-```bash
-npx prisma migrate dev
-```
-
-5. **Seed the Database**
-
-Populate the database with initial data:
-
-```bash
-node prisma/seed.js
-```
-
-6. **Start the Server**
-
-If you want to run the server in production mode, use:
-```bash
-npm start
-```
-
-If you want to run in development mode, use:
-```bash
-npm run dev
-```
-
-### Reset Database
-
-To reset the database, you could run the following command to undo all migrations and re-run them.
-```
-npx prisma migrate reset
-node prisma/seed.js
-```
 
 ## Contributors
 

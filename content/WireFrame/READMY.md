@@ -20,7 +20,7 @@
 
 ##### Product Page
 
-![Product Page](/ProductPage.png)
+![Product Page](ProductPage.png)
 
 - The product page provides detailed information about a specific product. 
   - Product image.

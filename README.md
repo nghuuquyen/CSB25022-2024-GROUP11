@@ -21,7 +21,7 @@ This project is built with robust and modern technologies to ensure high perform
 - [Planning](content/Planning/READMY.md)
 - [Task](content/Task/READMY.md)
 - [ScreenShot](content/ScreenShot/README.md)
-- [Videodemo] (assets/ideodemo.mp4)
+- [Videodemo] (assets/videodemo.mp4)
 
 ## Prerequisites
 

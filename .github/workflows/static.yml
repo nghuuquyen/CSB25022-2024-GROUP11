@@ -36,7 +36,7 @@ jobs:
         with:
           node-version: 18
           cache: 'npm'
-          cache-dependency-path: mockup/package-lock.json
+          cache-dependency-path: package-lock.json
       - name: Load environment variables
         run: echo "VITE_BASE_PATH=${{ vars.VITE_BASE_PATH }}" >> $GITHUB_ENV
       - name: Install dependencies

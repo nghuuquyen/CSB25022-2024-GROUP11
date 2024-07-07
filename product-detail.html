@@ -32,17 +32,17 @@
         }
         .image-container {
             position: relative;
-            margin: 10px; 
-            padding: 10px; 
-            border: 2px solid #e5e7eb; 
-            border-radius: 10px; 
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid #e5e7eb;
+            border-radius: 10px;
         }
 
         .image-container img {
-            width: calc(100% - 20px); 
-            height: calc(100% - 20px); 
+            width: calc(100% - 20px);
+            height: calc(100% - 20px);
             object-fit: cover;
-            border-radius: 8px; 
+            border-radius: 8px;
         }
     </style>
 </head>
@@ -96,9 +96,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"
     integrity="sha512-YHQNqPhxuCY2ddskIbDlZfwY6Vx3L3w9WRbyJCY81xpqLmrM6rL2+LocBgeVHwGY9SXYfQWJ+lcEWx1fKS2s8A=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script type="text/javascript" src="js/carousel.min.js"></script>
-<script type="text/javascript" src="js/script.js"></script>
-<script type="text/javascript">
+<script type="module" src="js/carousel.min.js"></script>
+<script type="module" src="js/script.js"></script>
+<script type="module">
     $('#_slide_home').owlCarousel({
         loop: true,
         nav: true,
@@ -152,7 +152,7 @@
         items: 1,
         slideSpeed: 2000,
         nav: false,
-        autoplay: false, 
+        autoplay: false,
         dots: false,
         loop: true,
         responsiveRefreshRate: 200
@@ -168,7 +168,7 @@
             item: 4,
             smartSpeed: 200,
             slideSpeed: 500,
-            slideBy: slidesPerPage, 
+            slideBy: slidesPerPage,
           navText: ['<svg width="18px" height="18px" viewBox="0 0 11 20"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M9.554,1.001l-8.607,8.607l8.607,8.606"/></svg>', '<svg width="25px" height="25px" viewBox="0 0 11 20" version="1.1"><path style="fill:none;stroke-width: 1px;stroke: #000;" d="M1.054,18.214l8.606,-8.606l-8.606,-8.607"/></svg>'],
             responsiveRefreshRate: 100
         }).on('changed.owl.carousel', syncPosition2);
@@ -302,7 +302,7 @@
           </div>
           <div>
           </div>
-         
+
           <div class="product-price-discount"><span>180.000 Đ</span><span class="line-through">$180.000 Đ</span></div>
           <div>
             <div>
@@ -346,9 +346,9 @@
   <div class="grid grid-cols-3 mt-20">
     <!-- Repeat this block for each product -->
 
-        <img class="rounded-md" src="./assets/b1dcfe76-80d6-46fd-a415-02a39086e9e9 1.png" alt="Product Image" class="mx-auto">
-        <img class="rounded-md" src="./assets/e125c464-6660-493a-939b-ab4dc2253e12 1.png" alt="Product Image" class="mx-auto">
-        <img class="rounded-md" src="./assets/bd1b20c8-965d-4c49-9561-63e3b143ba47 1.png" alt="Product Image" class="mx-auto">
+        <img class="rounded-md" src="/assets/b1dcfe76-80d6-46fd-a415-02a39086e9e9 1.png" alt="Product Image" class="mx-auto">
+        <img class="rounded-md" src="/assets/e125c464-6660-493a-939b-ab4dc2253e12 1.png" alt="Product Image" class="mx-auto">
+        <img class="rounded-md" src="/assets/bd1b20c8-965d-4c49-9561-63e3b143ba47 1.png" alt="Product Image" class="mx-auto">
     <!-- End product block -->
   </div>
 
@@ -366,7 +366,7 @@
               - Thành phần chính: Peptide, chiết xuất rễ cam thảo, chiết xuất vỏ cây liễu
             </p>
             <div class="mb-4">
-              <img class="w-65 h-full object-cover" src="./assets/serum-paulas-choice-clinical-1-retinol-beautybox_5891efdf8c1b4144837725993e8e11ac 1.png" alt="Product Image">
+              <img class="w-65 h-full object-cover" src="/assets/serum-paulas-choice-clinical-1-retinol-beautybox_5891efdf8c1b4144837725993e8e11ac 1.png" alt="Product Image">
             <div>
                 <p class="text-gray-600 dark:text-gray-300 text-sm mt-2">
                   Clinical 1% Retinol Treatment là một loại kem dưỡng da nhẹ có công thức đặc biệt, hấp thụ nhanh chóng và có tác dụng ngay lập tức để tăng cường dưỡng ẩm và giảm sự xuất hiện của nếp nhăn, đường nhăn và màu da không đồng đều. Chiết xuất cam thảo, yến mạch và các thành phần làm dịu khác giúp làm dịu vết mẩn đỏ.
@@ -397,22 +397,22 @@
     <div class="grid grid-cols-4 gap-6 mt-6">
         <!-- Repeat this block for each product -->
         <div class="bg-white p-6 overflow-hidden rounded-2xl shadow">
-            <img class="w-full rounded-md" src="./assets/image 4.png" alt="Product Image" class="mx-auto">
+            <img class="w-full rounded-md" src="/assets/image 4.png" alt="Product Image" class="mx-auto">
             <h3 class="mt-4 text-lg font-bold text-center">Candid BHA</h3>
             <p class="mt-2 text-center text-pink-500">160,000 Đ</p><span class="text-red-500 line-through">200,000 Đ</span></p>
         </div>
         <div class="bg-white p-6 overflow-hidden rounded-2xl shadow">
-            <img class="w-full rounded-md" src="./assets/image 4.png" alt="Product Image" class="mx-auto">
+            <img class="w-full rounded-md" src="/assets/image 4.png" alt="Product Image" class="mx-auto">
             <h3 class="mt-4 text-lg font-bold text-center">Candid BHA</h3>
             <p class="mt-2 text-center text-pink-500">160,000 Đ</p><span class="text-red-500 line-through">200,000 Đ</span></p>
         </div>
         <div class="bg-white p-6 overflow-hidden rounded-2xl shadow">
-            <img class="w-full rounded-md" src="./assets/image 4.png" alt="Product Image" class="mx-auto">
+            <img class="w-full rounded-md" src="/assets/image 4.png" alt="Product Image" class="mx-auto">
             <h3 class="mt-4 text-lg font-bold text-center">Candid BHA</h3>
             <p class="mt-2 text-center text-pink-500">160,000 Đ</p><span class="text-red-500 line-through">200,000 Đ</span></p>
         </div>
         <div class="bg-white p-6 overflow-hidden rounded-2xl shadow">
-            <img class="w-full rounded-md" src="./assets/image 4.png" alt="Product Image" class="mx-auto">
+            <img class="w-full rounded-md" src="/assets/image 4.png" alt="Product Image" class="mx-auto">
             <h3 class="mt-4 text-lg font-bold text-center">Candid BHA</h3>
             <p class="mt-2 text-center text-pink-500">160,000 Đ</p><span class="text-red-500 line-through">200,000 Đ</span></p>
         </div>
@@ -422,7 +422,7 @@
 
 
 <div>
-  <img src="./images/promo.png" alt="">
+  <img src="/images/promo.png" alt="">
 </div>
 
 </div>

@@ -8,6 +8,7 @@ export default defineConfig({
                 'main': 'index.html',
                 'productpage': 'productpage.html',
                 'product-detail': 'product-detail.html',
+                'detailedproduct': 'detailedproduct.html',
             }
         }
     }
